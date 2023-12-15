@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/signup"
+    app:startDestination="@id/homeFragment">
+
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.carapplication.ui.ui.fragments.HomeMenuFragment"
+        android:label="home_menu"
+        tools:layout="@layout/fragment_home_menu" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.carapplication.ProfileSettingFragment"
+        android:label="profile_setting"
+        tools:layout="@layout/fragment_profile_setting" />
+
+</navigation>

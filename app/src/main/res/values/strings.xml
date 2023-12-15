@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Car Application</string>
+    <string name="welcome_3">Best Free Location Based Parking App In \n The Country</string>
+    <string name="blue_parking">Lorem ipsum dolor sit amet, consectetur adipiscing \n elit,sed do eiusmod tempor incididunt ut labore etc</string>
+    <string name="dolore_magma">dolore magna aliqua</string>
+    <string name="login_to_your_account">Login To Your \n Account</string>
+    <string name="create_your_account">Create Your  \n Account</string>
+    <string name="find_the_best_place_to_park">Find the Best Place \n to Park</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

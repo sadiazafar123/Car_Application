@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".finaproj.EmailAddress">
+    <LinearLayout
+        android:id="@+id/llOne"
+        android:gravity="center"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:orientation="horizontal"
+        android:background="@drawable/round_shape"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp">
+        <ImageView
+            android:backgroundTint="@color/white"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/mail_img" />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/rlOne"
+        android:layout_below="@id/llOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Your Email Address"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            />
+        <TextView
+            android:layout_below="@id/tvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="we'll send you a link to reset your password"
+            android:layout_marginTop="10dp"
+            android:layout_centerInParent="true" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rlTwo"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/rlOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email Address"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/account_design" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@id/rlTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_resetpasemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rectangle_btn"
+            android:text="Reset password"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

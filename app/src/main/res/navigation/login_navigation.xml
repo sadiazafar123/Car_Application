@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_navigation"
+    app:startDestination="@id/activity6Login2">
+
+
+    <fragment
+        android:id="@+id/activity6Login2"
+        android:name="com.example.carapplication.finaproj.LoginFragment"
+        android:label="login_activity6"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_activity6Login2_to_emailAddress2"
+            app:destination="@id/emailAddress2" />
+        <action
+            android:id="@+id/action_activity6Login2_to_createAccount"
+            app:destination="@id/createAccount" />
+        <action
+            android:id="@+id/action_activity6Login2_to_containerBottomNavigaton"
+            app:destination="@id/containerBottomNavigaton" />
+    </fragment>
+    <fragment
+        android:id="@+id/emailAddress2"
+        android:name="com.example.carapplication.finaproj.EmailAddress"
+        android:label="email_address"
+        tools:layout="@layout/email_address">
+        <action
+            android:id="@+id/action_emailAddress2_to_resetPassword2"
+            app:destination="@id/resetPassword2" />
+    </fragment>
+    <fragment
+        android:id="@+id/resetPassword2"
+        android:name="com.example.carapplication.finaproj.ResetPassword"
+        android:label="reset_password"
+        tools:layout="@layout/reset_password" />
+    <fragment
+        android:id="@+id/createAccount"
+        android:name="com.example.carapplication.CreateAccount"
+        android:label="activity_create_account"
+        tools:layout="@layout/activity_create_account" >
+        <action
+            android:id="@+id/action_createAccount_to_vahicleInformation"
+            app:destination="@id/vahicleInformation" />
+    </fragment>
+    <fragment
+        android:id="@+id/vahicleInformation"
+        android:name="com.example.carapplication.ui.ui.fragments.VahicleInformation"
+        android:label="activity_vahicle_information"
+        tools:layout="@layout/activity_vahicle_information" >
+
+    </fragment>
+    <activity
+        android:id="@+id/containerBottomNavigaton"
+        android:name="com.example.carapplication.ui.ui.activities.DashboardContainerActivity"
+        android:label="container_bottom_navigaton"
+        tools:layout="@layout/activity_dashboard_container" />
+
+</navigation>
